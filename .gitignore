@@ -30,3 +30,6 @@ sysinfo.txt
 
 .gradle/
 local.properties
+.vsconfig
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/EditorBuildSettings.asset
