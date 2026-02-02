@@ -1,13 +1,121 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager main;
 
+    public Transform spawnpoint;
+
     public Transform[] checkpoints;
 
+    [SerializeField] private GameObject Default;
+    [SerializeField] private GameObject Fast;
+    [SerializeField] private GameObject Tank;
+
+    [SerializeField] private int wave = 1;
+    [SerializeField] private int enemyCount = 6;
+    [SerializeField] private float EnemyCountRate = 0.2f;
+    [SerializeField] private float SpawnDelayMax = 1f;
+    [SerializeField] private float SpawnDelayMin = 0.75f;
+
+    [SerializeField] private float DefaultRate = 0.5f;
+    [SerializeField] private float FastRate = 0.4f;
+    [SerializeField] private float TankRate = 0.1f;
+
+    private bool wavedone = false;
+    private List<GameObject> wavest = new List<GameObject>();
+    private int enemyLeft;
+
+    private int DefaultCount;
+    private int FastCount;
+    private int TankCount;
     void Awake()
     {
         main = this;
+    }
+
+    void Start()
+    {
+        SetWave();   
+    }
+
+    void Update()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        if (Input.GetKeyDown(KeyCode.Return) && wavedone && enemies.Length == 0) 
+        {
+            wave++;
+            wavedone = false;
+            enemyCount += Mathf.RoundToInt(enemyCount * EnemyCountRate);
+            SetWave();
+        }
+        if (Input.GetKeyDown(KeyCode.D) && wavedone)
+        {
+            for (int i = 0; i < enemies.Length; i++) { 
+            Destroy(enemies[i]);
+            }
+        }
+
+    }
+
+    private void SetWave()
+    {
+        DefaultCount = Mathf.RoundToInt(enemyCount * (DefaultRate + TankRate));
+        FastCount = Mathf.RoundToInt(enemyCount * FastRate);
+        TankCount = 0;
+
+        if (wave % 5 == 0)
+        {
+            DefaultCount = Mathf.RoundToInt(enemyCount * DefaultRate);
+            TankCount = Mathf.RoundToInt(enemyCount * TankRate);
+        }
+
+        enemyLeft = DefaultCount + FastCount + TankCount;
+        enemyCount = enemyLeft;
+
+        wavest = new List<GameObject>();
+
+        for (int i = 0; i < DefaultCount; i++)
+        {
+            wavest.Add(Default);
+        }
+        for (int i = 0; i < FastCount; i++)
+        {
+            wavest.Add(Fast);
+        }
+        for (int i = 0; i < TankCount; i++)
+        {
+            wavest.Add(Tank);
+        }
+        wavest = Shuffle(wavest);
+
+        StartCoroutine(spawn());
+    }
+
+    public List<GameObject> Shuffle(List<GameObject> waveSet) 
+    {
+        List<GameObject> temp = new List<GameObject>();
+        List<GameObject> result = new List<GameObject>();
+        temp.AddRange(waveSet);
+        for (int i = 0; i < waveSet.Count; i++)
+        {
+            int index = Random.Range(0, temp.Count - 1);
+            result.Add(temp[index]);
+            temp.RemoveAt(index);
+        }
+        return result;
+    }
+
+    IEnumerator spawn()
+    {
+        for (int i = 0; i < wavest.Count; i++)
+        {
+            Instantiate(wavest[i], spawnpoint.position, Quaternion.identity);
+            yield return new WaitForSeconds(Random.Range(SpawnDelayMin, SpawnDelayMax));
+        }
+        wavedone = true;
     }
 }
