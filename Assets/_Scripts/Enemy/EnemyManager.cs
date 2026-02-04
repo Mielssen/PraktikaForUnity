@@ -113,7 +113,11 @@ public class EnemyManager : MonoBehaviour
     {
         for (int i = 0; i < wavest.Count; i++)
         {
-            Instantiate(wavest[i], spawnpoint.position, Quaternion.identity);
+            GameObject enemyObj = Instantiate(wavest[i], spawnpoint.position, Quaternion.identity);
+            Enemy enemy = enemyObj.GetComponent<Enemy>();
+            if (wavest[i] == Default) enemy.health = 50;
+            else if (wavest[i] == Fast) enemy.health = 30;
+            else if (wavest[i] == Tank) enemy.health = 100;
             yield return new WaitForSeconds(Random.Range(SpawnDelayMin, SpawnDelayMax));
         }
         wavedone = true;

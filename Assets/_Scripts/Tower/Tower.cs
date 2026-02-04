@@ -4,10 +4,23 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
+    public enum TowerType
+    {
+        Single,
+        Sniper,
+        Splash
+    }
+    [Header("Tower Type")]
+    public TowerType type;
+
     [Header("Tower Stats")]
     public float range = 8f;
     public int damage = 25;
     public float fireRate = 1f;
+
+    [Header("Splash Settings")]
+    public float splashRadius = 2f;
+    [Range(0f, 1f)] public float splashDamageMultiplier = 0.6f;
 
     [Header("Targeting Mode")]
     public bool first = true;
@@ -21,26 +34,62 @@ public class Tower : MonoBehaviour
     [Header("Effects")]
     [SerializeField] GameObject fireEffect;
 
+
+
     void Start()
     {
-        fireEffect.SetActive(false);
+        if (fireEffect)
+            fireEffect.SetActive(false);
     }
 
     void Update()
     {
-        if (target) 
-        {
-            if (cooldown >= fireRate)
-            {
-                transform.right = target.transform.position - transform.position;
+        if (!target) return;
 
-                target.GetComponent<Enemy>().damage(damage);
-                cooldown = 0f;
-                StartCoroutine(FireEffect());
-            }
-            else 
+        if (cooldown >= fireRate)
+        {
+            transform.right = target.transform.position - transform.position;
+
+            switch (type)
             {
-                cooldown += 1 * Time.deltaTime;
+                case TowerType.Single:
+                case TowerType.Sniper:
+                    SingleAttack();
+                    break;
+
+                case TowerType.Splash:
+                    SplashAttack();
+                    break;
+            }
+
+            cooldown = 0f;
+            if (fireEffect)
+                StartCoroutine(FireEffect());
+        }
+        else
+        {
+            cooldown += Time.deltaTime;
+        }
+    }
+
+    void SingleAttack()
+    {
+        target.GetComponent<Enemy>().damage(damage);
+    }
+
+    void SplashAttack()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+            target.transform.position,
+            splashRadius
+        );
+
+        foreach (Collider2D hit in hits)
+        {
+            if (hit.CompareTag("Enemy"))
+            {
+                hit.GetComponent<Enemy>()
+                   .damage(Mathf.RoundToInt(damage * splashDamageMultiplier));
             }
         }
     }
@@ -48,7 +97,18 @@ public class Tower : MonoBehaviour
     IEnumerator FireEffect()
     {
         fireEffect.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         fireEffect.SetActive(false);
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmosSelected()
+    {
+        if (type == TowerType.Splash)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, splashRadius);
+        }
+    }
+#endif
 }

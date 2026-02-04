@@ -5,103 +5,104 @@ using UnityEngine;
 
 public class TowerRange : MonoBehaviour
 {
-    [SerializeField] private Tower Tower;
+    [SerializeField] private Tower tower;
     private List<GameObject> targets = new List<GameObject>();
 
     void Start()
     {
-        UpdateRange();    
+        transform.localScale = new Vector3(tower.range, tower.range, tower.range);
     }
 
     void Update()
     {
-        if (targets.Count > 0) 
+        if (targets.Count == 0)
         {
-            if (Tower.first)
-            {
-                float minDistance = Mathf.Infinity;
-                int maxIndex = 0;
-                GameObject firstTarget = null;
+            tower.target = null;
+            return;
+        }
 
-                foreach (GameObject target in targets)
-                {
-                    int index = target.GetComponent<Enemy>().index;
-                    float distance = target.GetComponent<Enemy>().distance;
-                    if(index > maxIndex || (index == maxIndex && distance < minDistance))
-                    {
-                        maxIndex = index;
-                        minDistance = distance;
-                        firstTarget = target;
-                    }
-                }
-
-                Tower.target = firstTarget;
-            }
-            else if (Tower.last)
-            {
-                float maxDistance = -Mathf.Infinity;
-                int minIndex = int.MaxValue;
-                GameObject lastTarget = null;
-
-                foreach (GameObject target in targets)
-                {
-                    int index = target.GetComponent<Enemy>().index;
-                    float distance = target.GetComponent<Enemy>().distance;
-                    if (index < minIndex || (index == minIndex && distance > maxDistance))
-                    {
-                        minIndex = index;
-                        maxDistance = distance;
-                        lastTarget = target;
-                    }
-                }
-
-                Tower.target = lastTarget;
-            }
-            else if (Tower.strong)
-            {
-                GameObject strongestTarget = null;
-                float maxHealth = 0;
-
-                foreach (GameObject target in targets)
-                {
-                    float health = target.GetComponent<Enemy>().health;
-
-                    if (health > maxHealth)
-                    {
-                        maxHealth = health;
-                        strongestTarget = target;
-                    }
-                }
-                Tower.target = strongestTarget;
-            }
-            else
-            {
-                Tower.target = targets[0];
-            }
+        if (tower.first)
+        {
+            tower.target = GetFirst();
+        }
+        else if (tower.last)
+        {
+            tower.target = GetLast();
+        }
+        else if (tower.strong)
+        {
+            tower.target = GetStrongest();
         }
         else
         {
-            Tower.target = null;
+            tower.target = targets[0];
         }
+    }
+
+    GameObject GetFirst()
+    {
+        GameObject best = null;
+        int maxIndex = -1;
+        float minDistance = Mathf.Infinity;
+
+        foreach (var t in targets)
+        {
+            Enemy e = t.GetComponent<Enemy>();
+            if (e.index > maxIndex || (e.index == maxIndex && e.distance < minDistance))
+            {
+                best = t;
+                maxIndex = e.index;
+                minDistance = e.distance;
+            }
+        }
+        return best;
+    }
+
+    GameObject GetLast()
+    {
+        GameObject best = null;
+        int minIndex = int.MaxValue;
+        float maxDistance = -Mathf.Infinity;
+
+        foreach (var t in targets)
+        {
+            Enemy e = t.GetComponent<Enemy>();
+            if (e.index < minIndex || (e.index == minIndex && e.distance > maxDistance))
+            {
+                best = t;
+                minIndex = e.index;
+                maxDistance = e.distance;
+            }
+        }
+        return best;
+    }
+
+    GameObject GetStrongest()
+    {
+        GameObject best = null;
+        float maxHp = 0;
+
+        foreach (var t in targets)
+        {
+            float hp = t.GetComponent<Enemy>().health;
+            if (hp > maxHp)
+            {
+                maxHp = hp;
+                best = t;
+            }
+        }
+        return best;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
-        {
+        if (collision.CompareTag("Enemy"))
             targets.Add(collision.gameObject);
-        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
-        {
+        if (collision.CompareTag("Enemy"))
             targets.Remove(collision.gameObject);
-        }
-    }
-    public void UpdateRange() 
-    {
-        transform.localScale = new Vector3(Tower.range, Tower.range, Tower.range);
     }
 }

@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4c1d0364a458b489c8f950a789f1b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TowerRange
-  Tower: {fileID: 6842539625848470257}
+  tower: {fileID: 6842539625848470257}
 --- !u!1 &6231253729826153528
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,9 +497,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6179c94ddcfd4bb4aa3df48870501b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  range: 7
+  type: 0
+  range: 8
   damage: 25
   fireRate: 1
+  splashRadius: 2
+  splashDamageMultiplier: 0.6
   first: 0
   last: 0
   strong: 1
