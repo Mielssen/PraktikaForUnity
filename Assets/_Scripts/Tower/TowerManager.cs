@@ -47,12 +47,16 @@ public class TowerManager : MonoBehaviour
 
             if (hit.collider != null)
             {
-                GameObject range1 = selectedTower.transform.GetChild(1).gameObject;
-                range1.GetComponent<SpriteRenderer>().enabled = false;
+                if (selectedTower)
+                {
+                    GameObject range1 = selectedTower.transform.GetChild(1).gameObject;
+                    range1.GetComponent<SpriteRenderer>().enabled = false;
+                }
+
+                selectedTower = hit.collider.gameObject;
+                GameObject range2 = selectedTower.transform.GetChild(1).gameObject;
+                range2.GetComponent<SpriteRenderer>().enabled = true;
             }
-            selectedTower = hit.collider.gameObject;
-            GameObject range2 = selectedTower.transform.GetChild(1).gameObject;
-            range2.GetComponent<SpriteRenderer>().enabled = true;
         }
         if (Input.GetKeyDown(KeyCode.U) && selectedTower) 
         {
@@ -62,7 +66,7 @@ public class TowerManager : MonoBehaviour
 
     private void ClearSelected()
     {
-        if (placingTower)
+        if (placingTower)   
         {
             Destroy(placingTower);
             placingTower = null;

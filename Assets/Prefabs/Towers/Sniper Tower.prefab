@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 6500864744496216425}
   - component: {fileID: -2821771967990588805}
   - component: {fileID: 6712960449075372461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sniper Tower
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -360,8 +360,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 353428944815592900}
-  - {fileID: 9097068721879657037}
   - {fileID: 3254556952863198554}
+  - {fileID: 9097068721879657037}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2821129250579505963
@@ -546,4 +546,4 @@ MonoBehaviour:
   - range: 8
     damage: 25
     fireRate: 1
-  towerRange: {fileID: 0}
+  towerRange: {fileID: 7465017144394528341}

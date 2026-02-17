@@ -338,7 +338,8 @@ GameObject:
   - component: {fileID: 8847799044484307853}
   - component: {fileID: 8025478512644205988}
   - component: {fileID: 5078338473406772783}
-  m_Layer: 0
+  - component: {fileID: 8982655087509639561}
+  m_Layer: 6
   m_Name: Splash Tower
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -359,8 +360,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2321633179919637949}
-  - {fileID: 1960619143025111602}
   - {fileID: 2633069732688750958}
+  - {fileID: 1960619143025111602}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6153191106241232228
@@ -523,3 +524,26 @@ MonoBehaviour:
   rangeCollider: {fileID: 917520857714969915}
   gray: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.19607843}
   red: {r: 1, g: 0, b: 0, a: 0.52156866}
+--- !u!114 &8982655087509639561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9116703689187095550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6180775a7acb5294c8da4b24fc6da52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerUpgrades
+  levels:
+  - range: 8
+    damage: 25
+    fireRate: 1
+  - range: 8
+    damage: 25
+    fireRate: 1
+  - range: 8
+    damage: 25
+    fireRate: 1
+  towerRange: {fileID: 1853780864301880803}

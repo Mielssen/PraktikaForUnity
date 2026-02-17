@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 6842539625848470257}
   - component: {fileID: 4335217918683107106}
   - component: {fileID: -6942264263121914342}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pistol Tower
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -360,8 +360,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6752643649761259562}
-  - {fileID: 7111594992653786791}
   - {fileID: 3972838048090960207}
+  - {fileID: 7111594992653786791}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3928854520765067224
