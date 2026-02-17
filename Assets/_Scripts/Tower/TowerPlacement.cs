@@ -30,6 +30,7 @@ public class TowerPlacement : MonoBehaviour
         {
             rangeCollider.enabled = true;
             isPlacing = false;
+            rangeSprite.enabled = false;
             GetComponent<TowerPlacement>().enabled = false;
         }
         bool isRectricted = restrictedCount > 0;

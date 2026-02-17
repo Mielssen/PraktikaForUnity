@@ -2053,6 +2053,9 @@ MonoBehaviour:
   singleTower: {fileID: 8523593165003884240, guid: c3f78d311241a1a438cd903bcfccf48e, type: 3}
   sniperTower: {fileID: 7743189310972988263, guid: 094db554d482cb54d83d0592a0a0d542, type: 3}
   splashTower: {fileID: 9116703689187095550, guid: dd477d36bd82a5a49a6a4a83422783dc, type: 3}
+  towerLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1552540414
 GameObject:
   m_ObjectHideFlags: 0

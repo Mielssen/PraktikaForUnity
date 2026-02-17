@@ -338,6 +338,7 @@ GameObject:
   - component: {fileID: 8020782313163423417}
   - component: {fileID: 6842539625848470257}
   - component: {fileID: 4335217918683107106}
+  - component: {fileID: -6942264263121914342}
   m_Layer: 0
   m_Name: Pistol Tower
   m_TagString: Tower
@@ -498,14 +499,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   type: 0
-  range: 8
-  damage: 25
+  range: 4
+  damage: 10
   fireRate: 1
   splashRadius: 2
   splashDamageMultiplier: 0.6
-  first: 0
+  first: 1
   last: 0
-  strong: 1
+  strong: 0
   fireEffect: {fileID: 6942996179027580540}
 --- !u!114 &4335217918683107106
 MonoBehaviour:
@@ -523,3 +524,26 @@ MonoBehaviour:
   rangeCollider: {fileID: 5934685833468013087}
   gray: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.19607843}
   red: {r: 1, g: 0, b: 0, a: 0.52156866}
+--- !u!114 &-6942264263121914342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8523593165003884240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6180775a7acb5294c8da4b24fc6da52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerUpgrades
+  levels:
+  - range: 6
+    damage: 20
+    fireRate: 1
+  - range: 8
+    damage: 25
+    fireRate: 1
+  - range: 10
+    damage: 25
+    fireRate: 1
+  towerRange: {fileID: 3124700307362314569}

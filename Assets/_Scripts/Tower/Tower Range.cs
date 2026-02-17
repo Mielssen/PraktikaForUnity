@@ -12,6 +12,18 @@ public class TowerRange : MonoBehaviour
     {
         transform.localScale = new Vector3(tower.range, tower.range, tower.range);
     }
+    public void UpdateRange()
+    {
+        if (tower == null)
+            tower = GetComponent<Tower>();
+
+        transform.localScale = new Vector3(
+            tower.range,
+            tower.range,
+            tower.range
+        );
+    }
+
 
     void Update()
     {
