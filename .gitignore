@@ -33,3 +33,11 @@ local.properties
 .vsconfig
 ProjectSettings/EditorBuildSettings.asset
 ProjectSettings/EditorBuildSettings.asset
+*.meta
+*.shader
+*.shadergraph
+*.cginc
+*.asset
+*.txt
+*.mat
+*.ttf

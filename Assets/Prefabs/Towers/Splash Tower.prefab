@@ -502,6 +502,7 @@ MonoBehaviour:
   range: 6
   damage: 30
   fireRate: 1.3
+  cost: 320
   splashRadius: 2.5
   splashDamageMultiplier: 0.5
   first: 0

@@ -17,6 +17,7 @@ public class Tower : MonoBehaviour
     public float range = 8f;
     public int damage = 25;
     public float fireRate = 1f;
+    public int cost = 50;
 
     [Header("Splash Settings")]
     public float splashRadius = 2f;

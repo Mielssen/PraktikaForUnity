@@ -10,10 +10,12 @@ public class TowerPlacement : MonoBehaviour
     [SerializeField] private Color red;
 
     [NonSerialized] public bool isPlacing = true;
-    //private bool isRectricted = false;
     private int restrictedCount = 0;
+
+    private Tower tower;
     void Awake()
     {
+        tower = GetComponent<Tower>();
         rangeCollider.enabled = false;
     }
 
@@ -25,12 +27,12 @@ public class TowerPlacement : MonoBehaviour
 
             transform.position = mousePosition;
         }
-        //if (Input.GetMouseButtonDown(1) && !isRectricted) 
-        if (Input.GetMouseButtonDown(1) && restrictedCount == 0)
+        if (Input.GetMouseButtonDown(1) && restrictedCount == 0 && tower.cost < Player.main.money)
         {
             rangeCollider.enabled = true;
             isPlacing = false;
             rangeSprite.enabled = false;
+            Player.main.money -= tower.cost;
             GetComponent<TowerPlacement>().enabled = false;
         }
         bool isRectricted = restrictedCount > 0;
@@ -48,7 +50,6 @@ public class TowerPlacement : MonoBehaviour
     {
         if ((collision.gameObject.tag == "Restricted" || collision.gameObject.tag == "Tower") && isPlacing)
         {
-            //isRectricted = true;
             restrictedCount++;
         }
     }
@@ -57,7 +58,6 @@ public class TowerPlacement : MonoBehaviour
     {
         if ((collision.gameObject.tag == "Restricted" || collision.gameObject.tag == "Tower") && isPlacing)
         {
-            //isRectricted = false;
             restrictedCount--;
         }
     }
