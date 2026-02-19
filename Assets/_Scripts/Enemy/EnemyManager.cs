@@ -48,26 +48,12 @@ public class EnemyManager : MonoBehaviour
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
-        if (Input.GetKeyDown(KeyCode.Return) && wavedone && enemies.Length == 0) 
-        {
-            wave++;
-            wavedone = false;
-            enemyCount += Mathf.RoundToInt(enemyCount * EnemyCountRate);
-            SetWave();
-        }
-
         if (!waveover && wavedone && enemies.Length == 0)
         {
             Player.main.money += 50 + (10 * wave);
             waveover = true;
             wavePanel.SetActive(true);
         }
-        //if (Input.GetKeyDown(KeyCode.D) && wavedone)
-        //{
-        //    for (int i = 0; i < enemies.Length; i++) { 
-        //    Destroy(enemies[i]);
-        //    }
-        //}
 
     }
 
@@ -119,7 +105,21 @@ public class EnemyManager : MonoBehaviour
         return result;
     }
 
+    public void NextWave()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
+        wavePanel.SetActive(false);
+
+        if (wavedone && enemies.Length == 0)
+        {
+            wave++;
+            wavedone = false;
+            waveover = false;
+            enemyCount += Mathf.RoundToInt(enemyCount * EnemyCountRate);
+            SetWave();
+        }
+    }
 
     IEnumerator spawn()
     {
