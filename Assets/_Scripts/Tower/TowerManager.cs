@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using TMPro;
+using System.Diagnostics.Tracing;
+using UnityEngine.EventSystems;
 public class TowerManager : MonoBehaviour
 {
     [Header("Towers")]
@@ -70,6 +72,13 @@ public class TowerManager : MonoBehaviour
                 {
                     towerTargetting.text = "Strong";
                 }
+            }
+            else if (!EventSystem.current.IsPointerOverGameObject() && selectedTower) 
+            {
+                panel.SetActive(false);
+                GameObject range1 = selectedTower.transform.GetChild(1).gameObject;
+                range1.GetComponent<SpriteRenderer>().enabled = false;
+                selectedTower = null;
             }
         }
     }

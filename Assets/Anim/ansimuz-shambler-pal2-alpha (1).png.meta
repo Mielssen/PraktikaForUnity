@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 280140d655c2fbb47bde7b1b7be7863f
+guid: 4cfd45e01c9439b4a83d6c6b9ed5b2ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5808436283860708277
-    second: ansimuz-shambler-pal2-alpha 1_0
+      213: -2857732972900246497
+    second: ansimuz-shambler-pal2-alpha (1)_0
   - first:
-      213: 1427737594189290483
-    second: ansimuz-shambler-pal2-alpha 1_1
+      213: -4572436941173119229
+    second: ansimuz-shambler-pal2-alpha (1)_1
   - first:
-      213: -6051145668324814930
-    second: ansimuz-shambler-pal2-alpha 1_2
+      213: 5945286498622364030
+    second: ansimuz-shambler-pal2-alpha (1)_2
   - first:
-      213: 9207468907964395056
-    second: ansimuz-shambler-pal2-alpha 1_3
+      213: 3387212971954222626
+    second: ansimuz-shambler-pal2-alpha (1)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,89 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ansimuz-shambler-pal2-alpha 1_0
+      name: ansimuz-shambler-pal2-alpha (1)_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 5
         y: 0
-        width: 28
-        height: 40
+        width: 24
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b441ef769f9446fa0800000000000000
-      internalID: -5808436283860708277
+      spriteID: b901b1ae493bc8446b8ec9852769967f
+      internalID: -2857732972900246497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ansimuz-shambler-pal2-alpha 1_1
+      name: ansimuz-shambler-pal2-alpha (1)_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 37
         y: 0
-        width: 28
+        width: 24
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3fb9f1607c750d310800000000000000
-      internalID: 1427737594189290483
+      spriteID: d3641521a4bd13a4b9395f76be9479e0
+      internalID: -4572436941173119229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ansimuz-shambler-pal2-alpha 1_2
+      name: ansimuz-shambler-pal2-alpha (1)_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 67
+        y: 0
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce02b100a33e104486103c0a93dbe3b
+      internalID: 5945286498622364030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ansimuz-shambler-pal2-alpha (1)_3
+      rect:
+        serializedVersion: 2
+        x: 99
         y: 0
         width: 26
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eaf0b533313060ca0800000000000000
-      internalID: -6051145668324814930
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ansimuz-shambler-pal2-alpha 1_3
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 0
-        width: 26
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03eeba3403087cf70800000000000000
-      internalID: 9207468907964395056
+      spriteID: 7dcde4914d34d6c489c9569b5ce9fe60
+      internalID: 3387212971954222626
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f288dbbe4ab650140a4fd4357942e94b
     internalID: 0
     vertices: []
     indices: 
@@ -221,12 +221,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ansimuz-shambler-pal2-alpha 1_0: -5808436283860708277
-      ansimuz-shambler-pal2-alpha 1_1: 1427737594189290483
-      ansimuz-shambler-pal2-alpha 1_2: -6051145668324814930
-      ansimuz-shambler-pal2-alpha 1_3: 9207468907964395056
+      ansimuz-shambler-pal2-alpha (1)_0: -2857732972900246497
+      ansimuz-shambler-pal2-alpha (1)_1: -4572436941173119229
+      ansimuz-shambler-pal2-alpha (1)_2: 5945286498622364030
+      ansimuz-shambler-pal2-alpha (1)_3: 3387212971954222626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

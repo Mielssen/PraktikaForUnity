@@ -502,6 +502,7 @@ MonoBehaviour:
   range: 4
   damage: 10
   fireRate: 1
+  cost: 50
   splashRadius: 2
   splashDamageMultiplier: 0.6
   first: 1
@@ -540,10 +541,13 @@ MonoBehaviour:
   - range: 6
     damage: 20
     fireRate: 1
+    cost: 100
   - range: 8
     damage: 25
-    fireRate: 1
+    fireRate: 0.7
+    cost: 150
   - range: 10
-    damage: 25
-    fireRate: 1
+    damage: 30
+    fireRate: 0.5
+    cost: 250
   towerRange: {fileID: 3124700307362314569}

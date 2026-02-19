@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 01303057f0a31244286de2c12b970b19
+guid: f1bf488b72451f144b042f2985bfecde
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4344233590832389629
-    second: ansimuz-shambler-pal2-alpha_0
+      213: -2857732972900246497
+    second: ansimuz-shambler-pal2-alpha (1)_0
   - first:
-      213: 5865693334692258963
-    second: ansimuz-shambler-pal2-alpha_1
+      213: -4572436941173119229
+    second: ansimuz-shambler-pal2-alpha (1)_1
   - first:
-      213: 3691558225526817658
-    second: ansimuz-shambler-pal2-alpha_2
+      213: 5945286498622364030
+    second: ansimuz-shambler-pal2-alpha (1)_2
   - first:
-      213: -7103500636373614299
-    second: ansimuz-shambler-pal2-alpha_3
+      213: 3387212971954222626
+    second: ansimuz-shambler-pal2-alpha (1)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,34 +122,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ansimuz-shambler-pal2-alpha_0
+      name: ansimuz-shambler-pal2-alpha (1)_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 4
         y: 0
-        width: 28
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dfd52e22f61d94c30800000000000000
-      internalID: 4344233590832389629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ansimuz-shambler-pal2-alpha_1
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 0
-        width: 28
+        width: 26
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -159,17 +137,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39465b79201276150800000000000000
-      internalID: 5865693334692258963
+      spriteID: f1c1c57800b4758d0800000000000000
+      internalID: -2857732972900246497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ansimuz-shambler-pal2-alpha_2
+      name: ansimuz-shambler-pal2-alpha (1)_1
       rect:
         serializedVersion: 2
-        x: 66
+        x: 36
         y: 0
         width: 26
         height: 39
@@ -181,19 +159,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a73823cb5ac0b3330800000000000000
-      internalID: 3691558225526817658
+      spriteID: 307a08be3d07b80c0800000000000000
+      internalID: -4572436941173119229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ansimuz-shambler-pal2-alpha_3
+      name: ansimuz-shambler-pal2-alpha (1)_2
       rect:
         serializedVersion: 2
-        x: 98
+        x: 66
         y: 0
-        width: 26
+        width: 28
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -203,8 +181,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5218033aecb4b6d90800000000000000
-      internalID: -7103500636373614299
+      spriteID: e79df4e2296e18250800000000000000
+      internalID: 5945286498622364030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ansimuz-shambler-pal2-alpha (1)_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2263de3704cc10f20800000000000000
+      internalID: 3387212971954222626
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ansimuz-shambler-pal2-alpha_0: 4344233590832389629
-      ansimuz-shambler-pal2-alpha_1: 5865693334692258963
-      ansimuz-shambler-pal2-alpha_2: 3691558225526817658
-      ansimuz-shambler-pal2-alpha_3: -7103500636373614299
+      ansimuz-shambler-pal2-alpha (1)_0: -2857732972900246497
+      ansimuz-shambler-pal2-alpha (1)_1: -4572436941173119229
+      ansimuz-shambler-pal2-alpha (1)_2: 5945286498622364030
+      ansimuz-shambler-pal2-alpha (1)_3: 3387212971954222626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

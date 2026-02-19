@@ -541,10 +541,13 @@ MonoBehaviour:
   - range: 8
     damage: 25
     fireRate: 1
-  - range: 8
-    damage: 25
+    cost: 100
+  - range: 12
+    damage: 35
     fireRate: 1
-  - range: 8
-    damage: 25
+    cost: 250
+  - range: 16
+    damage: 50
     fireRate: 1
+    cost: 400
   towerRange: {fileID: 7465017144394528341}
