@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 115504765006507831}
   - component: {fileID: 1871579089635936587}
+  - component: {fileID: 7551224664378124250}
   m_Layer: 0
   m_Name: Fast
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 1039199100966532927}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.016, y: -0.021, z: 0}
-  m_LocalScale: {x: 0.30973154, y: 0.33063793, z: 1}
+  m_LocalPosition: {x: 0.5856, y: 0.486, z: 0}
+  m_LocalScale: {x: 1.682214, y: 1.7791958, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4334697103421674789}
@@ -81,16 +82,38 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5246133556034159203, guid: c9bacda5630cb78498a1be1147f8308b, type: 3}
+  m_Sprite: {fileID: -8638840753231423921, guid: 4c10f9f13bd21d047a2830af8fac9842, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.67, y: 3.65}
+  m_Size: {x: 0.83, y: 0.55}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &7551224664378124250
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039199100966532927}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a0ab2b3adfacef346ac23202d05083d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8438334683468151826
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,6 +127,7 @@ GameObject:
   - component: {fileID: 7302859099658920475}
   - component: {fileID: -5086474696342899660}
   - component: {fileID: 3186217503557463449}
+  - component: {fileID: 5510311387275915580}
   m_Layer: 0
   m_Name: Fast
   m_TagString: Enemy
@@ -120,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 8438334683468151826}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.23, y: 1.084, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6918526, y: 0.7518507, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -263,3 +287,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   health: 50
   movespeed: 1.5
+--- !u!111 &5510311387275915580
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8438334683468151826}
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 5a6d35b2801d843498985499f835b2a4, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0

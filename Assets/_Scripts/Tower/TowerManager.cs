@@ -20,8 +20,8 @@ public class TowerManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI UpgradeCost;
     [SerializeField] private TextMeshProUGUI towerTargetting;
 
-    private GameObject selectedTower;
-    private GameObject placingTower;
+    private Tower selectedTower;
+    private Tower placingTower;
 
     void Update()
     {
@@ -46,20 +46,23 @@ public class TowerManager : MonoBehaviour
             {
                 if (selectedTower)
                 {
-                    GameObject range1 = selectedTower.transform.GetChild(1).gameObject;
-                    range1.GetComponent<SpriteRenderer>().enabled = false;
+                    selectedTower.Select(false);
                 }
 
-                selectedTower = hit.collider.gameObject;
-                GameObject range2 = selectedTower.transform.GetChild(1).gameObject;
-                range2.GetComponent<SpriteRenderer>().enabled = true;
+                Tower hitTower = hit.collider.GetComponent<Tower>();
+                Debug.Log("test");
+                if (!hitTower) return;
+                Debug.Log("test2");
+
+                selectedTower = hitTower;
+                selectedTower.Select(true);
 
                 panel.SetActive(true);
                 towerName.text = selectedTower.name.Replace("(Clone)", "").Trim();
                 towerLevel.text = "Tower LVL: " + selectedTower.GetComponent<TowerUpgrades>().currentlevel.ToString();
                 UpgradeCost.text = selectedTower.GetComponent<TowerUpgrades>().currentCost;
 
-                Tower tower = selectedTower.GetComponent<Tower>();
+                Tower tower = selectedTower;
                 if(tower.first)
                 {
                     towerTargetting.text = "First";
@@ -76,8 +79,7 @@ public class TowerManager : MonoBehaviour
             else if (!EventSystem.current.IsPointerOverGameObject() && selectedTower) 
             {
                 panel.SetActive(false);
-                GameObject range1 = selectedTower.transform.GetChild(1).gameObject;
-                range1.GetComponent<SpriteRenderer>().enabled = false;
+                selectedTower.Select(false);
                 selectedTower = null;
             }
         }
@@ -92,7 +94,7 @@ public class TowerManager : MonoBehaviour
         }
     }
 
-    public void setTower(GameObject tower)
+    public void setTower(Tower tower)
     {
         ClearSelected();
         placingTower = Instantiate(tower);

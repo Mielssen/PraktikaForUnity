@@ -6,6 +6,7 @@ public class TowerPlacement : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer rangeSprite;
     [SerializeField] private CircleCollider2D rangeCollider;
+    [SerializeField] private CircleCollider2D selectCollider;
     [SerializeField] private Color gray;
     [SerializeField] private Color red;
 
@@ -17,6 +18,7 @@ public class TowerPlacement : MonoBehaviour
     {
         tower = GetComponent<Tower>();
         rangeCollider.enabled = false;
+        selectCollider.enabled = false;
     }
 
     void Update()
@@ -30,6 +32,7 @@ public class TowerPlacement : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && restrictedCount == 0 && tower.cost < Player.main.money)
         {
             rangeCollider.enabled = true;
+            selectCollider.enabled = true;
             isPlacing = false;
             rangeSprite.enabled = false;
             Player.main.money -= tower.cost;

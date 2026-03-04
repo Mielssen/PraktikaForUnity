@@ -10,6 +10,12 @@ public class Tower : MonoBehaviour
         Sniper,
         Splash
     }
+
+    public GameObject obj;
+    public SpriteRenderer sprite;
+    public SpriteRenderer rangeSprite;
+
+
     [Header("Tower Type")]
     public TowerType type;
 
@@ -49,7 +55,7 @@ public class Tower : MonoBehaviour
 
         if (cooldown >= fireRate)
         {
-            transform.right = target.transform.position - transform.position;
+            obj.transform.right = target.transform.position - obj.transform.position;
 
             switch (type)
             {
@@ -71,6 +77,11 @@ public class Tower : MonoBehaviour
         {
             cooldown += Time.deltaTime;
         }
+    }
+
+    public void Select(bool select)
+    {
+        rangeSprite.enabled = select;
     }
 
     void SingleAttack()
@@ -108,7 +119,7 @@ public class Tower : MonoBehaviour
         if (type == TowerType.Splash)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, splashRadius);
+            Gizmos.DrawWireSphere(obj.transform.position, splashRadius);
         }
     }
 #endif

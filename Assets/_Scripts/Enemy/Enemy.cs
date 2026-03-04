@@ -44,8 +44,13 @@ public class Enemy : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 direction = (checkpoint.position - transform.position).normalized;
-        transform.right = checkpoint.position - transform.position;
+        //transform.right = checkpoint.position - transform.position;
         rb.linearVelocity = direction * movespeed;
+
+        if (direction.x > 0)
+            transform.localScale = new Vector3(1, 1, 1);
+        else if (direction.x < 0)
+            transform.localScale = new Vector3(-1, 1, 1);
     }
 
     public void damage(int damage)
