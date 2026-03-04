@@ -31,6 +31,7 @@ Transform:
   m_Children:
   - {fileID: 9089088739234437522}
   - {fileID: 8209772747205013644}
+  - {fileID: 6446012615953009755}
   m_Father: {fileID: 2100801814344460824}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1489870952352351245
@@ -48,7 +49,7 @@ GameObject:
   - component: {fileID: 2782006167496040348}
   - component: {fileID: 1464765717124398912}
   m_Layer: 6
-  m_Name: Sniper_tower_new
+  m_Name: Sniper Tower
   m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,7 +315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6446012615953009755
 Transform:
   m_ObjectHideFlags: 0
@@ -324,11 +325,11 @@ Transform:
   m_GameObject: {fileID: 4780082501292196121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.82, y: -0.01, z: 0}
-  m_LocalScale: {x: 0.2701059, y: 0.32102016, z: 1}
+  m_LocalPosition: {x: 1.2573, y: 0.077, z: 0}
+  m_LocalScale: {x: 0.19012435, y: 0.24238701, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8209772747205013644}
+  m_Father: {fileID: 2809510325712883298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3434953455546939090
 SpriteRenderer:
@@ -511,8 +512,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6446012615953009755}
+  m_Children: []
   m_Father: {fileID: 2809510325712883298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5100508046734733106
