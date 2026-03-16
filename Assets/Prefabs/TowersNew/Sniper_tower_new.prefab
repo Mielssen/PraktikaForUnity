@@ -233,8 +233,8 @@ Transform:
   m_GameObject: {fileID: 3072375116813064671}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.016, y: 0.04, z: 0}
-  m_LocalScale: {x: 0.56938785, y: 0.64350885, z: 0.31222308}
+  m_LocalPosition: {x: 0.109, y: -0.001, z: 0}
+  m_LocalScale: {x: 0.40089175, y: 0.46446475, z: 0.31222308}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2809510325712883298}
@@ -286,7 +286,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2013788151
   m_SortingLayer: -1
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4393558011857041481, guid: 94e3db854026a7c44a8295dbba8a8dab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -314,7 +314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6446012615953009755
 Transform:
   m_ObjectHideFlags: 0
@@ -324,8 +324,8 @@ Transform:
   m_GameObject: {fileID: 4780082501292196121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.82, y: -0.01, z: 0}
-  m_LocalScale: {x: 0.2701059, y: 0.32102016, z: 1}
+  m_LocalPosition: {x: 1.055, y: -0.01, z: 0}
+  m_LocalScale: {x: 0.17300282, y: 0.17964287, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8209772747205013644}
@@ -416,7 +416,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.95174736, y: 0.9657646, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2100801814344460824}
@@ -468,7 +468,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2013788151
   m_SortingLayer: -1
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7316229441688303391, guid: 67899f93396377f4ca42c67606a4ea9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
