@@ -13,6 +13,7 @@ public class ShopManager : MonoBehaviour
 
     public void ToggleShop()
     {
+        SoundManager.instance.PlaySFX(SoundManager.instance.buttonClick);
         gameObject.SetActive(!gameObject.activeSelf);
     }
 

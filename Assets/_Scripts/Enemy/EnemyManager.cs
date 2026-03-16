@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
@@ -27,6 +28,9 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private float DefaultRate = 0.5f;
     [SerializeField] private float FastRate = 0.4f;
     [SerializeField] private float TankRate = 0.1f;
+
+    [Header("Level Settings")]
+    [SerializeField] private int maxWaves = 20;
 
     private bool wavedone = false;
     private bool waveover = false;
@@ -71,8 +75,28 @@ public class EnemyManager : MonoBehaviour
         Player.main.money += 50 + (10 * wave);
         if (wave % 3 == 0) Player.main.AddDarkMatter(30);
 
+        if (wave >= maxWaves)
+        {
+            LoadNextLevel();
+            return;
+        }
+
         waveover = true;
         wavePanel.SetActive(true);
+    }
+
+    void LoadNextLevel()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.Log("Game Completed!");
+        }
     }
 
     public void NextWave()

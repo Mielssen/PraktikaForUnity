@@ -135,6 +135,7 @@ public class Tower : MonoBehaviour
     {
         // Переконуємося, що ми використовуємо метод damage у Enemy
         target.GetComponent<Enemy>().damage(damage);
+        SoundManager.instance.PlaySFX(SoundManager.instance.towerShoot);
     }
 
     void SplashAttack()

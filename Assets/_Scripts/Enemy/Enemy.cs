@@ -93,6 +93,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        SoundManager.instance.PlaySFX(SoundManager.instance.enemyDeath);
         Player.main.AddMoney(value);
         gameObject.SetActive(false);
     }
