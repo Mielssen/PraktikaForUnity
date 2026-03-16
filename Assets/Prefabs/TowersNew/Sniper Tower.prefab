@@ -31,6 +31,7 @@ Transform:
   m_Children:
   - {fileID: 9089088739234437522}
   - {fileID: 8209772747205013644}
+  - {fileID: 6446012615953009755}
   m_Father: {fileID: 2100801814344460824}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1489870952352351245
@@ -48,7 +49,7 @@ GameObject:
   - component: {fileID: 2782006167496040348}
   - component: {fileID: 1464765717124398912}
   m_Layer: 6
-  m_Name: Sniper_tower_new
+  m_Name: Sniper Tower
   m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,8 +113,8 @@ MonoBehaviour:
   rangeSprite: {fileID: 5100508046734733106}
   rangeCollider: {fileID: 9046448444907011523}
   selectCollider: {fileID: 2782006167496040348}
-  gray: {r: 0.3, g: 0.3, b: 0.3, a: 0.46666667}
-  red: {r: 1, g: 0, b: 0, a: 0}
+  gray: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.19607843}
+  red: {r: 1, g: 0, b: 0, a: 0.52156866}
 --- !u!114 &2819714306509820958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +180,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.5
+  m_Radius: 0.7
 --- !u!50 &1464765717124398912
 Rigidbody2D:
   serializedVersion: 5
@@ -285,7 +286,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2013788151
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4393558011857041481, guid: 94e3db854026a7c44a8295dbba8a8dab, type: 3}
@@ -328,7 +329,7 @@ Transform:
   m_LocalScale: {x: 0.17300282, y: 0.17964287, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8209772747205013644}
+  m_Father: {fileID: 2809510325712883298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3434953455546939090
 SpriteRenderer:
@@ -376,7 +377,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2013788151
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8046100216946520313, guid: 9c3ec0e136d57ec438e219b4b6e62749, type: 3}
@@ -467,7 +468,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2013788151
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7316229441688303391, guid: 67899f93396377f4ca42c67606a4ea9a, type: 3}
@@ -511,8 +512,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6446012615953009755}
+  m_Children: []
   m_Father: {fileID: 2809510325712883298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5100508046734733106
@@ -561,7 +561,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2013788151
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
@@ -609,7 +609,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.7
 --- !u!114 &3959269387507880916
 MonoBehaviour:
   m_ObjectHideFlags: 0

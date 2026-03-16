@@ -15,7 +15,6 @@ public class Tower : MonoBehaviour
     public SpriteRenderer sprite;
     public SpriteRenderer rangeSprite;
 
-
     [Header("Tower Type")]
     public TowerType type;
 
@@ -41,7 +40,27 @@ public class Tower : MonoBehaviour
     [Header("Effects")]
     [SerializeField] GameObject fireEffect;
 
+    // Змінні для системи бафів
+    private float originalFireRate;
+    private bool isBoosted = false;
 
+    void Awake()
+    {
+        // Зберігаємо початкову швидкість стрільби при старті
+        originalFireRate = fireRate;
+    }
+
+    private void OnEnable()
+    {
+        // Підписуємо вежу на подію прискорення з AbilityManager
+        AbilityManager.OnTowerBoost += StartTowerBoost;
+    }
+
+    private void OnDisable()
+    {
+        // Відписуємося при видаленні об'єкта
+        AbilityManager.OnTowerBoost -= StartTowerBoost;
+    }
 
     void Start()
     {
@@ -53,6 +72,7 @@ public class Tower : MonoBehaviour
     {
         if (!target) return;
 
+        // Перевірка кулдауна (використовує поточний fireRate, який може бути змінений бафом)
         if (cooldown >= fireRate)
         {
             obj.transform.right = target.transform.position - obj.transform.position;
@@ -79,6 +99,33 @@ public class Tower : MonoBehaviour
         }
     }
 
+    // --- ЛОГІКА ПРИСКОРЕННЯ ---
+    private void StartTowerBoost()
+    {
+        if (!isBoosted)
+        {
+            StartCoroutine(TowerBoostRoutine());
+        }
+    }
+
+    IEnumerator TowerBoostRoutine()
+    {
+        isBoosted = true;
+
+        // Зменшуємо затримку вдвічі (стріляє в 2 рази швидше)
+        fireRate = originalFireRate / 2f;
+
+        // Візуальний відгук: вежа стає трохи помаранчевою (колір бафу)
+        if (sprite != null) sprite.color = new Color(1f, 0.8f, 0.4f);
+
+        yield return new WaitForSeconds(5f); // Тривалість дії бафу
+
+        // Повертаємо все до норми
+        fireRate = originalFireRate;
+        if (sprite != null) sprite.color = Color.white;
+        isBoosted = false;
+    }
+
     public void Select(bool select)
     {
         rangeSprite.enabled = select;
@@ -86,6 +133,7 @@ public class Tower : MonoBehaviour
 
     void SingleAttack()
     {
+        // Переконуємося, що ми використовуємо метод damage у Enemy
         target.GetComponent<Enemy>().damage(damage);
     }
 

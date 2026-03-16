@@ -174,6 +174,7 @@ MonoBehaviour:
   health: 75
   movespeed: 1
   value: 10
+  freezeColor: {r: 0, g: 1, b: 1, a: 1}
 --- !u!95 &2056598393290864976
 Animator:
   serializedVersion: 7

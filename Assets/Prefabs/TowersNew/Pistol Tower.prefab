@@ -141,7 +141,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 2
+  m_Radius: 0.7
 --- !u!1 &2610022650006172830
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,8 +259,8 @@ Transform:
   m_GameObject: {fileID: 5012209162567257969}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.053, y: 0.037, z: 0}
-  m_LocalScale: {x: 0.2701059, y: 0.32102016, z: 1}
+  m_LocalPosition: {x: 0.93, y: 0.037, z: 0}
+  m_LocalScale: {x: 0.1730028, y: 0.1796429, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8496743783891058800}
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 3257216019055238453}
   - component: {fileID: 4786688600762752806}
   m_Layer: 6
-  m_Name: Pistol Tower New
+  m_Name: Pistol Tower
   m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -595,7 +595,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.5
+  m_Radius: 0.7
 --- !u!50 &4786688600762752806
 Rigidbody2D:
   serializedVersion: 5

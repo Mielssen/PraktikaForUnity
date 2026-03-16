@@ -25,12 +25,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86171925825743476}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.7119163, w: -0.70226437}
-  m_LocalPosition: {x: -0.02, y: 1.06, z: 0}
-  m_LocalScale: {x: 0.17377491, y: 0.14651807, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.006220906, w: 0.9999806}
+  m_LocalPosition: {x: 1.0600234, y: 0.018719196, z: 0}
+  m_LocalScale: {x: 0.17377493, y: 0.1465181, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3774617711212882281}
+  m_Father: {fileID: 7194756002850571794}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.782}
 --- !u!212 &6587378140943476567
 SpriteRenderer:
@@ -122,8 +122,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8105493377848338805}
+  m_Children: []
   m_Father: {fileID: 7194756002850571794}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.069}
 --- !u!212 &2829992942363388064
@@ -172,7 +171,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2013788151
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
@@ -220,7 +219,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.7
 --- !u!114 &3311605006064789891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,7 +311,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2013788151
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6809907661698028246, guid: c47e6c2546f7361489090a08346f5f12, type: 3}
@@ -340,7 +339,7 @@ GameObject:
   - component: {fileID: 8208353491404469385}
   - component: {fileID: 3518964548459496916}
   m_Layer: 6
-  m_Name: Splash tow new 1
+  m_Name: Splash Tower
   m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -404,8 +403,8 @@ MonoBehaviour:
   rangeSprite: {fileID: 2829992942363388064}
   rangeCollider: {fileID: 7764082578924619079}
   selectCollider: {fileID: 8208353491404469385}
-  gray: {r: 0.29803923, g: 0.29803923, b: 0.29803923, a: 0.69411767}
-  red: {r: 1, g: 0, b: 0, a: 0.5529412}
+  gray: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.19607843}
+  red: {r: 1, g: 0, b: 0, a: 0.52156866}
 --- !u!114 &1143975268631697060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,7 +470,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.5
+  m_Radius: 0.7
 --- !u!50 &3518964548459496916
 Rigidbody2D:
   serializedVersion: 5
@@ -530,6 +529,7 @@ Transform:
   m_Children:
   - {fileID: 6706536029458841881}
   - {fileID: 3774617711212882281}
+  - {fileID: 8105493377848338805}
   m_Father: {fileID: 1304269566611645185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7978258867335445769
@@ -610,7 +610,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2013788151
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7316229441688303391, guid: 67899f93396377f4ca42c67606a4ea9a, type: 3}

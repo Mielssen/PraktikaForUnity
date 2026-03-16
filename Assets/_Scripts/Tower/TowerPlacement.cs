@@ -18,7 +18,7 @@ public class TowerPlacement : MonoBehaviour
     {
         tower = GetComponent<Tower>();
         rangeCollider.enabled = false;
-        selectCollider.enabled = false;
+        //selectCollider.enabled = false;
     }
 
     void Update()
@@ -32,7 +32,7 @@ public class TowerPlacement : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && restrictedCount == 0 && tower.cost < Player.main.money)
         {
             rangeCollider.enabled = true;
-            selectCollider.enabled = true;
+            //selectCollider.enabled = true;
             isPlacing = false;
             rangeSprite.enabled = false;
             Player.main.money -= tower.cost;
