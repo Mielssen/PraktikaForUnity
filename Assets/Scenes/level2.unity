@@ -5128,8 +5128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TowerManager
   singleTower: {fileID: 5753073433431348997, guid: 828f8e7ce77176b42a85176e20686f1d, type: 3}
-  sniperTower: {fileID: 7743189310972988263, guid: 094db554d482cb54d83d0592a0a0d542, type: 3}
-  splashTower: {fileID: 9116703689187095550, guid: dd477d36bd82a5a49a6a4a83422783dc, type: 3}
+  sniperTower: {fileID: 1489870952352351245, guid: ebc638c39c561dc459c8c7202c2183da, type: 3}
+  splashTower: {fileID: 7153432603334934891, guid: 8908e48602e4aa84b9a04d0dacdbc950, type: 3}
   towerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -7693,7 +7693,7 @@ Transform:
   m_GameObject: {fileID: 1674743571}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

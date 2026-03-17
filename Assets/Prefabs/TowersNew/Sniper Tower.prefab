@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2809510325712883298}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sniper Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9089088739234437522}
   - component: {fileID: 5919574268346145877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Single
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,8 +234,8 @@ Transform:
   m_GameObject: {fileID: 3072375116813064671}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.169, y: 0.2331, z: 0}
-  m_LocalScale: {x: 0.2626643, y: 0.29832572, z: 0.31222308}
+  m_LocalPosition: {x: 0.1865, y: -0.118, z: 0}
+  m_LocalScale: {x: 0.4699852, y: 0.51082313, z: 0.31222308}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2809510325712883298}
@@ -285,8 +285,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 2013788151
-  m_SortingLayer: -2
+  m_SortingLayerID: 1842190419
+  m_SortingLayer: 1
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4393558011857041481, guid: 94e3db854026a7c44a8295dbba8a8dab, type: 3}
@@ -309,7 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6446012615953009755}
   - component: {fileID: 3434953455546939090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FireEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,8 +325,8 @@ Transform:
   m_GameObject: {fileID: 4780082501292196121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4386, y: 0.2272, z: 0}
-  m_LocalScale: {x: 0.11111972, y: 0.11770201, z: 1}
+  m_LocalPosition: {x: 1.2269, y: -0.1286, z: 0}
+  m_LocalScale: {x: 0.19027029, y: 0.21060419, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2809510325712883298}
@@ -400,7 +400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1927331898644022467}
   - component: {fileID: 102969124115017547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,8 +416,8 @@ Transform:
   m_GameObject: {fileID: 7134700983360781887}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2511, y: 0.242, z: 0}
-  m_LocalScale: {x: 0.38538003, y: 0.39312002, z: 1}
+  m_LocalPosition: {x: 0.0701, y: -0.1211, z: 0}
+  m_LocalScale: {x: 0.6598862, y: 0.7034096, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2100801814344460824}
@@ -467,8 +467,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 2013788151
-  m_SortingLayer: -2
+  m_SortingLayerID: 1842190419
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7316229441688303391, guid: 67899f93396377f4ca42c67606a4ea9a, type: 3}
@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 5100508046734733106}
   - component: {fileID: 9046448444907011523}
   - component: {fileID: 3959269387507880916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,8 +509,8 @@ Transform:
   m_GameObject: {fileID: 7452130361200693922}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.239, y: 0.2337, z: 0}
-  m_LocalScale: {x: 0.6423, y: 0.6552, z: 1}
+  m_LocalPosition: {x: 0.0667, y: -0.1169, z: 0}
+  m_LocalScale: {x: 1.0998102, y: 1.1723493, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2809510325712883298}
@@ -565,7 +565,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.4188679, g: 0.4188679, b: 0.4188679, a: 0.49019608}
+  m_Color: {r: 0.4188679, g: 0.4188679, b: 0.4188679, a: 0.67058825}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -604,7 +604,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
