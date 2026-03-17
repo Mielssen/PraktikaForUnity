@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.498, y: 0.5043, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8496743783891058800}
@@ -167,13 +167,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2610022650006172830}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7090035, y: -0.70498675, z: 0.012369528, w: 0.012440004}
-  m_LocalPosition: {x: 0.207, y: -0.089, z: -0.002}
-  m_LocalScale: {x: 0.48092705, y: 0.4425376, z: 0.31222308}
+  m_LocalRotation: {x: -0.7069992, y: -0.7069968, z: 0.012334525, w: 0.012470355}
+  m_LocalPosition: {x: 0.097, y: -0.067, z: 0}
+  m_LocalScale: {x: 0.24253151, y: 0.22038372, z: 0.31222308}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8496743783891058800}
-  m_LocalEulerAnglesHint: {x: -0.011, y: -177.99, z: 90.325}
+  m_LocalEulerAnglesHint: {x: -0.011, y: -177.99, z: 90}
 --- !u!212 &6787992216606778920
 SpriteRenderer:
   serializedVersion: 2
@@ -259,8 +259,8 @@ Transform:
   m_GameObject: {fileID: 5012209162567257969}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.93, y: 0.037, z: 0}
-  m_LocalScale: {x: 0.1730028, y: 0.1796429, z: 1}
+  m_LocalPosition: {x: 0.447, y: -0.003, z: 0}
+  m_LocalScale: {x: 0.08615539, y: 0.09059391, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8496743783891058800}
@@ -351,7 +351,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalScale: {x: 0.29880002, y: 0.30258, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5258468423760723639}
@@ -479,7 +479,7 @@ Transform:
   m_GameObject: {fileID: 5753073433431348997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.037, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -595,7 +595,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.7
+  m_Radius: 0.4
 --- !u!50 &4786688600762752806
 Rigidbody2D:
   serializedVersion: 5
