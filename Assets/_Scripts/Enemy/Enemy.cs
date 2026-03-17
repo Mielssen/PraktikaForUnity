@@ -34,7 +34,8 @@ public class Enemy : MonoBehaviour
         foreach (var anim in anims) anim.speed = 1;
         foreach (var sr in srs) sr.color = Color.white;
 
-        if (EnemyManager.main != null && EnemyManager.main.checkpoints.Length > 0)
+        // Перевіряємо, чи існує менеджер і чи є в нього точки
+        if (EnemyManager.main != null && EnemyManager.main.checkpoints != null && EnemyManager.main.checkpoints.Length > 0)
         {
             checkpoint = EnemyManager.main.checkpoints[index];
         }
@@ -53,27 +54,38 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if (index >= EnemyManager.main.checkpoints.Length) return;
+        // Безпечна перевірка: якщо менеджера немає або він ще не ініціалізований
+        if (EnemyManager.main == null || EnemyManager.main.checkpoints == null || index >= EnemyManager.main.checkpoints.Length) return;
 
         checkpoint = EnemyManager.main.checkpoints[index];
-        distance = Vector2.Distance(transform.position, checkpoint.position);
 
-        if (Vector2.Distance(checkpoint.position, transform.position) <= 0.1f)
+        if (checkpoint != null)
         {
-            index++;
-            if (index >= EnemyManager.main.checkpoints.Length)
+            distance = Vector2.Distance(transform.position, checkpoint.position);
+
+            if (distance <= 0.1f)
             {
-                Player.main.damage(health);
-                gameObject.SetActive(false);
+                index++;
+                if (index >= EnemyManager.main.checkpoints.Length)
+                {
+                    Player.main.damage(health);
+                    gameObject.SetActive(false);
+                }
             }
         }
     }
 
     void FixedUpdate()
     {
-        if (index >= EnemyManager.main.checkpoints.Length) return;
+        // Головний захист від NullReferenceException
+        if (EnemyManager.main == null || EnemyManager.main.checkpoints == null || index >= EnemyManager.main.checkpoints.Length || checkpoint == null)
+            return;
 
-        Vector2 direction = (checkpoint.position - transform.position).normalized;
+        // Явно приводимо обидва значення до Vector2, щоб Unity не плутався
+        Vector2 currentPos = transform.position;
+        Vector2 targetPos = checkpoint.position;
+
+        Vector2 direction = (targetPos - currentPos).normalized;
         rb.linearVelocity = direction * movespeed;
 
         if (direction.x > 0)
