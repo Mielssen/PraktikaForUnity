@@ -30,7 +30,8 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private float TankRate = 0.1f;
 
     [Header("Level Settings")]
-    [SerializeField] private int maxWaves = 20;
+    [SerializeField] private int currentLevelNumber = 1;
+    [SerializeField] private int maxWaves = 20; 
 
     private bool wavedone = false;
     private bool waveover = false;
@@ -72,31 +73,19 @@ public class EnemyManager : MonoBehaviour
 
     private void EndWave()
     {
+
         Player.main.money += 50 + (10 * wave);
         if (wave % 3 == 0) Player.main.AddDarkMatter(30);
 
         if (wave >= maxWaves)
         {
-            LoadNextLevel();
+            Player.main.WinLevel(currentLevelNumber);
+            waveover = true; 
             return;
         }
 
         waveover = true;
-        wavePanel.SetActive(true);
-    }
-
-    void LoadNextLevel()
-    {
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(nextSceneIndex);
-        }
-        else
-        {
-            Debug.Log("Game Completed!");
-        }
+        if (wavePanel != null) wavePanel.SetActive(true);
     }
 
     public void NextWave()
@@ -104,7 +93,7 @@ public class EnemyManager : MonoBehaviour
         wave++;
         wavedone = false;
         waveover = false;
-        wavePanel.SetActive(false);
+        if (wavePanel != null) wavePanel.SetActive(false);
         enemyCount += Mathf.RoundToInt(enemyCount * EnemyCountRate);
         SetWave();
     }

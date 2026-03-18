@@ -34,7 +34,6 @@ public class Enemy : MonoBehaviour
         foreach (var anim in anims) anim.speed = 1;
         foreach (var sr in srs) sr.color = Color.white;
 
-        // Перевіряємо, чи існує менеджер і чи є в нього точки
         if (EnemyManager.main != null && EnemyManager.main.checkpoints != null && EnemyManager.main.checkpoints.Length > 0)
         {
             checkpoint = EnemyManager.main.checkpoints[index];
@@ -54,7 +53,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        // Безпечна перевірка: якщо менеджера немає або він ще не ініціалізований
+
         if (EnemyManager.main == null || EnemyManager.main.checkpoints == null || index >= EnemyManager.main.checkpoints.Length) return;
 
         checkpoint = EnemyManager.main.checkpoints[index];
@@ -77,11 +76,10 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Головний захист від NullReferenceException
+
         if (EnemyManager.main == null || EnemyManager.main.checkpoints == null || index >= EnemyManager.main.checkpoints.Length || checkpoint == null)
             return;
 
-        // Явно приводимо обидва значення до Vector2, щоб Unity не плутався
         Vector2 currentPos = transform.position;
         Vector2 targetPos = checkpoint.position;
 

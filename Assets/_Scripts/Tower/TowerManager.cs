@@ -94,10 +94,15 @@ public class TowerManager : MonoBehaviour
         }
     }
 
-    public void setTower(Tower tower)
+    public void setTower(Tower towerPrefab)
     {
-        ClearSelected();
-        placingTower = Instantiate(tower);
+        if (placingTower != null)
+        {
+            Destroy(placingTower.gameObject);
+            placingTower = null;
+        }
+
+        placingTower = Instantiate(towerPrefab);
     }
 
     public void UpgradeSelected()
@@ -113,27 +118,26 @@ public class TowerManager : MonoBehaviour
     {
         if (selectedTower)
         {
-            Tower tower = selectedTower.GetComponent<Tower>();
 
-            if (tower.first)
+            if (selectedTower.first)
             {
-                tower.first = false;
-                tower.last = true;
-                tower.strong = false;
+                selectedTower.first = false;
+                selectedTower.last = true;
+                selectedTower.strong = false;
                 towerTargetting.text = "Last";
             }
-            else if (tower.last)
+            else if (selectedTower.last)
             {
-                tower.first = false;
-                tower.last = false;
-                tower.strong = true;
+                selectedTower.first = false;
+                selectedTower.last = false;
+                selectedTower.strong = true;
                 towerTargetting.text = "Strong";
             }
-            else if (tower.last)
+            else 
             {
-                tower.first = true;
-                tower.last = false;
-                tower.strong = false;
+                selectedTower.first = true;
+                selectedTower.last = false;
+                selectedTower.strong = false;
                 towerTargetting.text = "First";
             }
         }
