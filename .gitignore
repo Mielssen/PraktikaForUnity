@@ -6,7 +6,7 @@
 [Ll]ogs/
 [Uu]serSettings/
 [Mm]emoryCaptures/
-
+!Assets/Prefabs/Enemies/library/
 .vs/
 .vscode/
 .idea/

@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: c491e4599ad4c0942bb9f0106194528f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8060115392432434716
+    second: librar_spider-removebg-preview_0
+  - first:
+      213: -8506096276622582006
+    second: librar_spider-removebg-preview_1
+  - first:
+      213: -803805571203148713
+    second: librar_spider-removebg-preview_2
+  - first:
+      213: -3424094135898266797
+    second: librar_spider-removebg-preview_3
+  - first:
+      213: 2018873395327856239
+    second: librar_spider-removebg-preview_4
+  - first:
+      213: 3691178749426984808
+    second: librar_spider-removebg-preview_5
+  - first:
+      213: 6255227122742735708
+    second: librar_spider-removebg-preview_6
+  - first:
+      213: -2571337257890471900
+    second: librar_spider-removebg-preview_7
+  - first:
+      213: -6329799798163802168
+    second: librar_spider-removebg-preview_8
+  - first:
+      213: -5703107976027683060
+    second: librar_spider-removebg-preview_9
+  - first:
+      213: -7296028494097244420
+    second: librar_spider-removebg-preview_10
+  - first:
+      213: -2830420679581832507
+    second: librar_spider-removebg-preview_11
+  - first:
+      213: -4241548974819435678
+    second: librar_spider-removebg-preview_12
+  - first:
+      213: -2008700120415538508
+    second: librar_spider-removebg-preview_13
+  - first:
+      213: 1363517351453795856
+    second: librar_spider-removebg-preview_14
+  - first:
+      213: 5184474816147108267
+    second: librar_spider-removebg-preview_15
+  - first:
+      213: 6666360838581700927
+    second: librar_spider-removebg-preview_16
+  - first:
+      213: -6375932466923462107
+    second: librar_spider-removebg-preview_17
+  - first:
+      213: 403058713852686002
+    second: librar_spider-removebg-preview_18
+  - first:
+      213: -5838529578107710727
+    second: librar_spider-removebg-preview_19
+  - first:
+      213: -7996896598252006562
+    second: librar_spider-removebg-preview_20
+  - first:
+      213: 8966079689649753251
+    second: librar_spider-removebg-preview_21
+  - first:
+      213: 6242055857046058668
+    second: librar_spider-removebg-preview_22
+  - first:
+      213: -2537316574628810043
+    second: librar_spider-removebg-preview_23
+  - first:
+      213: 5316455575715964580
+    second: librar_spider-removebg-preview_24
+  - first:
+      213: 2737981127593395301
+    second: librar_spider-removebg-preview_25
+  - first:
+      213: 1282163416804118548
+    second: librar_spider-removebg-preview_26
+  - first:
+      213: 5905462831062662632
+    second: librar_spider-removebg-preview_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 169
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1186141c7b42090800000000000000
+      internalID: -8060115392432434716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 202
+        width: 316
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f53aee08644f980800000000000000
+      internalID: -8506096276622582006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 169
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754d4fb771f48d4f0800000000000000
+      internalID: -803805571203148713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 170
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3532948668c2b70d0800000000000000
+      internalID: -3424094135898266797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 169
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ee00718aa740c10800000000000000
+      internalID: 2018873395327856239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 170
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867e0121483b93330800000000000000
+      internalID: 3691178749426984808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 169
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5338703de70fc650800000000000000
+      internalID: 6255227122742735708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 123
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42026b13366c05cd0800000000000000
+      internalID: -2571337257890471900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 122
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c77b1bce980828a0800000000000000
+      internalID: -6329799798163802168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 122
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c074c2d138d7ad0b0800000000000000
+      internalID: -5703107976027683060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 122
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe943a9dbc4fba90800000000000000
+      internalID: -7296028494097244420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 123
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5caea9c536358b8d0800000000000000
+      internalID: -2830420679581832507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 123
+        width: 59
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b177a1eadf225c0800000000000000
+      internalID: -4241548974819435678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 123
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2f85e02e9af14e0800000000000000
+      internalID: -2008700120415538508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 124
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0162c729ecf2ce210800000000000000
+      internalID: 1363517351453795856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 69
+        width: 60
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba138637064f2f740800000000000000
+      internalID: 5184474816147108267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 68
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f39cc30ecdba38c50800000000000000
+      internalID: 6666360838581700927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 69
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 522a525d3332487a0800000000000000
+      internalID: -6375932466923462107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 69
+        width: 63
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bea0d6c3c3f79500800000000000000
+      internalID: 403058713852686002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 69
+        width: 69
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f25746584069fea0800000000000000
+      internalID: -5838529578107710727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 68
+        width: 70
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53d8abc9e0550190800000000000000
+      internalID: -7996896598252006562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 16
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac0b6139f9ed6c70800000000000000
+      internalID: 8966079689649753251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 17
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6706beabc30a650800000000000000
+      internalID: 6242055857046058668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 17
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2f986c404a9ccd0800000000000000
+      internalID: -2537316574628810043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 16
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6e1b6ad28d7c940800000000000000
+      internalID: 5316455575715964580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 15
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5648def34534ff520800000000000000
+      internalID: 2737981127593395301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 15
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4105c9a95d82bc110800000000000000
+      internalID: 1282163416804118548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librar_spider-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 16
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed33c7082b64f150800000000000000
+      internalID: 5905462831062662632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      librar_spider-removebg-preview_0: -8060115392432434716
+      librar_spider-removebg-preview_1: -8506096276622582006
+      librar_spider-removebg-preview_10: -7296028494097244420
+      librar_spider-removebg-preview_11: -2830420679581832507
+      librar_spider-removebg-preview_12: -4241548974819435678
+      librar_spider-removebg-preview_13: -2008700120415538508
+      librar_spider-removebg-preview_14: 1363517351453795856
+      librar_spider-removebg-preview_15: 5184474816147108267
+      librar_spider-removebg-preview_16: 6666360838581700927
+      librar_spider-removebg-preview_17: -6375932466923462107
+      librar_spider-removebg-preview_18: 403058713852686002
+      librar_spider-removebg-preview_19: -5838529578107710727
+      librar_spider-removebg-preview_2: -803805571203148713
+      librar_spider-removebg-preview_20: -7996896598252006562
+      librar_spider-removebg-preview_21: 8966079689649753251
+      librar_spider-removebg-preview_22: 6242055857046058668
+      librar_spider-removebg-preview_23: -2537316574628810043
+      librar_spider-removebg-preview_24: 5316455575715964580
+      librar_spider-removebg-preview_25: 2737981127593395301
+      librar_spider-removebg-preview_26: 1282163416804118548
+      librar_spider-removebg-preview_27: 5905462831062662632
+      librar_spider-removebg-preview_3: -3424094135898266797
+      librar_spider-removebg-preview_4: 2018873395327856239
+      librar_spider-removebg-preview_5: 3691178749426984808
+      librar_spider-removebg-preview_6: 6255227122742735708
+      librar_spider-removebg-preview_7: -2571337257890471900
+      librar_spider-removebg-preview_8: -6329799798163802168
+      librar_spider-removebg-preview_9: -5703107976027683060
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
