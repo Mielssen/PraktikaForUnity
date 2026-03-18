@@ -24292,6 +24292,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7204973795633390713, guid: 5de71157d1b5bc44faddb9f5e8ee19fc, type: 3}
+      propertyPath: enemyDeath
+      value: 
+      objectReference: {fileID: 8300000, guid: 974961d8aba5b65488199f75e852bacf, type: 3}
+    - target: {fileID: 7204973795633390713, guid: 5de71157d1b5bc44faddb9f5e8ee19fc, type: 3}
+      propertyPath: towerShoot
+      value: 
+      objectReference: {fileID: 8300000, guid: 88fe292455fa0504392d381cd8dcde87, type: 3}
+    - target: {fileID: 7204973795633390713, guid: 5de71157d1b5bc44faddb9f5e8ee19fc, type: 3}
+      propertyPath: buttonClick
+      value: 
+      objectReference: {fileID: 8300000, guid: f9bd41d0c7b94f24c9c533bd6b9f38cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
