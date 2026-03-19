@@ -21633,6 +21633,7 @@ GameObject:
   - component: {fileID: 1390536500}
   - component: {fileID: 1390536502}
   - component: {fileID: 1390536501}
+  - component: {fileID: 1390536503}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -21766,6 +21767,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b06aa3512e2a4e42af090515c506d24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPool
+--- !u!114 &1390536503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390536496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb324034332636d4eb979c626f4d3b66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioLoader
+  mixer: {fileID: 24100000, guid: 8e33c8349cd260d4e876a4f85451c323, type: 2}
 --- !u!1 &1418334583
 GameObject:
   m_ObjectHideFlags: 0
@@ -25007,6 +25021,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 294773129040571825, guid: 5de71157d1b5bc44faddb9f5e8ee19fc, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 1986528665260173095, guid: 8e33c8349cd260d4e876a4f85451c323, type: 2}
     - target: {fileID: 4101798311381726780, guid: 5de71157d1b5bc44faddb9f5e8ee19fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.65027
@@ -25051,6 +25069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6311713186418133268, guid: 5de71157d1b5bc44faddb9f5e8ee19fc, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 5598333630864078005, guid: 8e33c8349cd260d4e876a4f85451c323, type: 2}
     - target: {fileID: 7204973795633390713, guid: 5de71157d1b5bc44faddb9f5e8ee19fc, type: 3}
       propertyPath: enemyDeath
       value: 
