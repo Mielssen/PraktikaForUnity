@@ -14,6 +14,11 @@ public class SoundManager : MonoBehaviour
     public AudioClip enemyDeath;
     public AudioClip buttonClick;
 
+    [Header("Volume")]
+    [Range(0f, 1f)] public float masterVolume = 1f;
+    [Range(0f, 1f)] public float musicVolume = 1f;
+    [Range(0f, 1f)] public float sfxVolume = 1f;
+
     void Awake()
     {
         if (instance == null)
@@ -30,6 +35,27 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
         PlayMusic(backgroundMusic);
+    }
+
+    void Update()
+    {
+        musicSource.volume = musicVolume * masterVolume;
+        sfxSource.volume = sfxVolume * masterVolume;
+    }
+
+    public void SetMasterVolume(float value)
+    {
+        masterVolume = value;
+    }
+
+    public void SetMusicVolume(float value)
+    {
+        musicVolume = value;
+    }
+
+    public void SetSFXVolume(float value)
+    {
+        sfxVolume = value;
     }
 
     public void PlayMusic(AudioClip clip)
