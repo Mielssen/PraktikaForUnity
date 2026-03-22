@@ -41,6 +41,7 @@ public class Tower : MonoBehaviour
     [SerializeField] GameObject fireEffect;
 
     
+
     private float originalFireRate;
     private bool isBoosted = false;
 
@@ -153,6 +154,7 @@ public class Tower : MonoBehaviour
                    .damage(Mathf.RoundToInt(damage * splashDamageMultiplier));
             }
         }
+        SoundManager.instance.PlaySFX(SoundManager.instance.towerShoot);
     }
 
     IEnumerator FireEffect()

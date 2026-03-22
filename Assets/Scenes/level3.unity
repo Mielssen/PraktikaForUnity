@@ -14992,6 +14992,10 @@ PrefabInstance:
       propertyPath: buttonClick
       value: 
       objectReference: {fileID: 8300000, guid: f9bd41d0c7b94f24c9c533bd6b9f38cc, type: 3}
+    - target: {fileID: 7204973795633390713, guid: 5de71157d1b5bc44faddb9f5e8ee19fc, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 6bc2e4868569772439e6d22a78f71a8e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

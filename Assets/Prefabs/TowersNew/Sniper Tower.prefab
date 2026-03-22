@@ -88,10 +88,10 @@ MonoBehaviour:
   sprite: {fileID: 5919574268346145877}
   rangeSprite: {fileID: 5100508046734733106}
   type: 1
-  range: 8
-  damage: 25
-  fireRate: 1
-  cost: 50
+  range: 4
+  damage: 20
+  fireRate: 1.5
+  cost: 150
   splashRadius: 2
   splashDamageMultiplier: 0.6
   first: 1
@@ -128,20 +128,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TowerUpgrades
   levels:
-  - range: 8
-    damage: 25
-    fireRate: 1
-    cost: 100
+  - range: 4
+    damage: 20
+    fireRate: 1.5
+    cost: 250
     sprite: {fileID: 4393558011857041481, guid: 94e3db854026a7c44a8295dbba8a8dab, type: 3}
-  - range: 12
-    damage: 35
-    fireRate: 1
-    cost: 200
+  - range: 6
+    damage: 25
+    fireRate: 2
+    cost: 400
     sprite: {fileID: 6796601663289162038, guid: 541fd7d857a523b4a8458113b58dc4c6, type: 3}
-  - range: 15
-    damage: 45
-    fireRate: 0.75
-    cost: 350
+  - range: 8
+    damage: 35
+    fireRate: 2.2
+    cost: 700
     sprite: {fileID: 5653806642901954993, guid: 3aad5d736934f3f47ae44796bd72d744, type: 3}
   towerRange: {fileID: 3959269387507880916}
   sr: {fileID: 5919574268346145877}
