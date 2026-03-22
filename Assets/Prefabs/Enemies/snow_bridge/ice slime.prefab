@@ -129,9 +129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df0dc87f6d89b847bde31e45852bc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  health: 50
+  health: 80
   movespeed: 1
-  value: 10
+  value: 50
   index: 0
 --- !u!50 &-648000480259855304
 Rigidbody2D:

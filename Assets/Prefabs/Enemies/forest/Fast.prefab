@@ -287,7 +287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   health: 50
   movespeed: 1.5
-  value: 10
+  value: 67
+  index: 0
 --- !u!111 &5510311387275915580
 Animation:
   m_ObjectHideFlags: 0

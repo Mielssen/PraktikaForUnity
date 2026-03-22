@@ -131,7 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   health: 350
   movespeed: 0.7
-  value: 10
+  value: 300
   index: 0
 --- !u!50 &833309560329547916
 Rigidbody2D:

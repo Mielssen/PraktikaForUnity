@@ -194,5 +194,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   health: 200
   movespeed: 0.9
-  value: 10
+  value: 250
   index: 0
